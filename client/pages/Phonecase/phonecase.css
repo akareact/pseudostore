@@ -1,0 +1,52 @@
+* {
+  text-decoration: none;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+#header {
+  background-color: #ff7100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#logo {
+  height: 3vw;
+  width: 3vw;
+}
+
+#logoimg {
+  animation-name: logosize;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes logosize {
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+#storeName {
+  font-size: xx-large;
+  margin: 2vw;
+  margin-left: 0.3vw;
+  color: white;
+}
+
+#break {
+  width: 10vw;
+  border-top: 1px solid #ff7100;
+}

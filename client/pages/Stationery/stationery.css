@@ -1,0 +1,85 @@
+* {
+  text-decoration: none;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+#header {
+  background-color: #ff7100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#logo {
+  height: 3vw;
+  width: 3vw;
+}
+
+#logoimg {
+  animation-name: logosize;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes logosize {
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+#storeName {
+  font-size: xx-large;
+  margin: 2vw;
+  margin-left: 0.3vw;
+  color: white;
+}
+
+#break {
+  width: 10vw;
+  border-top: 1px solid #ff7100;
+}
+
+#products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  transition: 0.5s;
+  flex-wrap: wrap;
+}
+
+#product {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  width: 50vh;
+  margin: 2vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.5s;
+}
+#product:hover {
+  transform: scale(1.2, 1.2);
+  cursor: pointer;
+}
+#prodimg {
+  flex: 4;
+}
+#prodtitle {
+  align-self: flex-end;
+  text-align: center;
+  background-color: #ff7100;
+  color: white;
+  width: 100%;
+}
